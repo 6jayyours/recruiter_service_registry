@@ -16,4 +16,4 @@ jobs:
       - name: delete old docker image
         run:  docker rm -f service-registry || true
       - name: run docker container
-        run:  docker run -d -p 8761:8761 --name service-registry --network rec_net marjunr/recruiter-serviceregistry
+        run:  docker run -d -p 8761:8761 --name service-registry --network rec-net marjunr/recruiter-serviceregistry
